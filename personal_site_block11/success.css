@@ -1,0 +1,12 @@
+document.addEventListener("DOMContentLoaded", function () {
+    function goBack() {
+        window.location.href = "index.html";
+    }
+
+    const button = document.querySelector("button"); 
+    if (button) {
+        button.addEventListener("click", goBack);
+    } else {
+        console.error("Return Home button not found!");
+    }
+});
